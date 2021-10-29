@@ -16,4 +16,4 @@ print("The value of `c` is: " + str(c))
 # This means that the last input variable will take the last value.
 # In our example, for the variable `a` the last value to store is 9.
 # b will take the last value which is 8.
-# c will hole the value of the sum of `a + b` or `9 + 6`. Since there is only one instance of the variable `c` it will output 15. 
+# c will hole the value of the sum of `a + b` or `9 + 6`. Since there is only one instance of the variable `c` it will output 15.
