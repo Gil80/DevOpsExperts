@@ -1,3 +1,9 @@
+# Create a variable name first with value 7.
+# Create a variable name second with value 44.3.
+# Print result of adding first to second.
+# Print result of multiplying first by second
+# Print result of dividing second by first
+
 import math
 
 first = 7
