@@ -8,9 +8,9 @@
 x = "#"
 y = 5
 
-for i in range(0,y+1):
+for i in range(0, y+1):
     text = ""
-    for c in range(0,i):
+    for c in range(0, i):
         text += x
     print(text)
                     
