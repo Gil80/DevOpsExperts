@@ -11,7 +11,7 @@ def welcome(name):
 name = ""
 
 print("\nHello " + welcome(name) +
-      " and welcome to the World Of Games (WoG).\nHere you can find many cool games to play\n")
+      " and welcome to the World Of Games (WoG).\nHere you can find many cool games to play.\n")
 
 def load_game():
     print("Please choose a game to play:\n")
@@ -28,13 +28,8 @@ def load_game():
     else:
         print("\nERROR! You have entered an invalid `game` selection. Please try again")
         return load_game()
-        
-
-# len(game_num) == 1 and int(game_num) <= 3 and int(game_num) != 0 and game_num.isdigit() and game_num == game_num.isnumeric()
-
 
 game_num, difficulty = load_game()
-
       
 #  print game selection
 if int(game_num) == 1:
