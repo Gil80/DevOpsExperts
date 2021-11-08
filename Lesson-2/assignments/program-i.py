@@ -11,13 +11,9 @@ num_result = num()
    
 print("The sum is: " + str(num_result))
 
-
-
-
 def space_string():
     str1 = input("Type in a word: ")
     str2 = input("Type in another word: ")
     return str1 + " " + str2 
 
 print(space_string())
-
