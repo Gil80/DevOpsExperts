@@ -16,6 +16,6 @@ def compute_sum(num):
         sum += int(num[i])
     return(sum)
 
-num = user_input()
+num = user_input() #  initializing the variable and calling the function
 print(compute_sum(num))
 
