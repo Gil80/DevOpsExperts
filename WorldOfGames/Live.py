@@ -1,36 +1,39 @@
-### World Of Games ###
+# World Of Games #
 
 def welcome(name):
-    name = input("Please type in your name: \n")
     if len(name) < 30:
-        return name
+        return print("\nHello " + name + " and welcome to the World Of Games (WoG).\nHere you can find many cool games "
+                                         "to play.\n")
     else:
-        print("ERROR!!!\nYou have typed more than 30 characters.\nIt's not likely you have such a long name. Please try again.")
-        return welcome(name)
+        print("ERROR!!!\nYou have typed more than 30 characters.\nIt's not likely you have such a long name. Please "
+              "try again.")
+        input_name_try = input("Please type in your name: \n")
+        return welcome(input_name_try)
 
-name = ""
 
-print("\nHello " + welcome(name) +
-      " and welcome to the World Of Games (WoG).\nHere you can find many cool games to play.\n")
+input_name = input("Please type in your name: \n")
+welcome(input_name)
+
 
 def load_game():
     print("Please choose a game to play:\n")
-    game_num = input("1. Memory game - a sequence of numbers will appear for 1 second and you have to guess it back\n"
-                     "2. Guess Game - guess a number and see if you choose like the computer\n"
-                     "3. Currency Roulette - try and guess the value of a random amount of USD in ILS\n")    
-    if game_num.isdigit() and int(game_num) > 0 and int(game_num) <=3:
+    game_num1 = input("1. Memory game - a sequence of numbers will appear for 1 second and you have to guess it back\n"
+                      "2. Guess Game - guess a number and see if you choose like the computer\n"
+                      "3. Currency Roulette - try and guess the value of a random amount of USD in ILS\n")
+    if game_num1.isdigit() and 0 < int(game_num1) <= 3:
         while True:
-            difficulty = input("Please choose game difficulty from 1 to 5:\n")
-            if difficulty.isdigit() and int(difficulty) > 0 and int(difficulty) <= 5:
-                return game_num, difficulty
+            difficulty1 = input("Please choose game difficulty from 1 to 5:\n")
+            if difficulty1.isdigit() and 0 < int(difficulty1) <= 5:
+                return game_num1, difficulty1
             else:
-                print("\nERROR! You have entered an invalid `difficulty` value. Please try again")           
+                print("\nERROR! You have entered an invalid `difficulty` value. Please try again")
     else:
         print("\nERROR! You have entered an invalid `game` selection. Please try again")
         return load_game()
 
+
 game_num, difficulty = load_game()
-      
+
 #  print game selection
 if int(game_num) == 1:
     print("Your game selection is: Memory Game")
