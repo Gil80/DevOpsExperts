@@ -7,6 +7,7 @@ def user_input():
     if len(num) == 2 and num.isdigit():
         return num
     else:
+        print("ERROR!\nYou have entered an incorrect value.\nPlease try again.")
         return user_input()
 
 
