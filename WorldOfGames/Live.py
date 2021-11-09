@@ -40,4 +40,3 @@ def load_game():
         print("\nERROR! You have entered an invalid `game` selection. Please try again")
         return load_game()
 
-game_num, difficulty = load_game()
