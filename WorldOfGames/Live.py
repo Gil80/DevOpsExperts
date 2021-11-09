@@ -17,14 +17,14 @@ welcome(input_name)
 
 def load_game():
     print("Please choose a game to play:\n")
-    game_num1 = input("1. Memory game - a sequence of numbers will appear for 1 second and you have to guess it back\n"
-                      "2. Guess Game - guess a number and see if you choose like the computer\n"
-                      "3. Currency Roulette - try and guess the value of a random amount of USD in ILS\n")
-    if game_num1.isdigit() and 0 < int(game_num1) <= 3:
+    game = input("1. Memory game - a sequence of numbers will appear for 1 second and you have to guess it back\n"
+                 "2. Guess Game - guess a number and see if you choose like the computer\n"
+                 "3. Currency Roulette - try and guess the value of a random amount of USD in ILS\n")
+    if game.isdigit() and 0 < int(game) <= 3:
         while True:
-            difficulty1 = input("Please choose game difficulty from 1 to 5:\n")
-            if difficulty1.isdigit() and 0 < int(difficulty1) <= 5:
-                return game_num1, difficulty1
+            difficulty_level = input("Please choose game difficulty from 1 to 5:\n")
+            if difficulty_level.isdigit() and 0 < int(difficulty_level) <= 5:
+                return game, difficulty_level
             else:
                 print("\nERROR! You have entered an invalid `difficulty` value. Please try again")
     else:
