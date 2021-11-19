@@ -7,8 +7,4 @@ finally:
    print("Closing file descriptor")
    myfile.close()
 
-with open(file_name, "r") as f_read:
- line = f_read.readline()
- while line:
-     print(f"Greeting {line}")
-     line = f_read.readline()
+
