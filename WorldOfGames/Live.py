@@ -32,8 +32,7 @@ def load_game():
         while True:
             difficulty_level = input("Please choose game difficulty from 1 to 5:\n")
             if difficulty_level.isdigit() and 0 < int(difficulty_level) <= 5:
-                for i in difficulty_level:
-                    print("Your difficulty level is: " + i)  # print difficulty selection
+                print(f"Your difficulty level is: {difficulty_level}")  # print difficulty selection
                 return game, int(difficulty_level)
             else:
                 print("\nERROR! You have entered an invalid `difficulty` value. Please try again")
