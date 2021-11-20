@@ -21,10 +21,11 @@ def load_game():
                  "2. Guess Game - guess a number and see if you choose like the computer\n"
                  "3. Currency Roulette - try and guess the value of a random amount of USD in ILS\n")
     if game.isdigit() and 0 < int(game) <= 3:
+        game = int(game)
         #  print game selection
-        if int(game) == 1:
+        if game == 1:
             print("Your game selection is: Memory Game\n")
-        elif int(game) == 2:
+        elif game == 2:
             print("Your game selection is: Guess Game\n")
         else:
             print("Your game selection is: Currency Roulette\n")
@@ -33,7 +34,7 @@ def load_game():
             if difficulty_level.isdigit() and 0 < int(difficulty_level) <= 5:
                 for i in difficulty_level:
                     print("Your difficulty level is: " + i) #  print difficulty selection
-                return game, difficulty_level
+                return game, int(difficulty_level)
             else:
                 print("\nERROR! You have entered an invalid `difficulty` value. Please try again")
     else:
