@@ -50,7 +50,8 @@ def play(difficulty):
     input("Press Enter to start")
     print(rand_list)
     time.sleep(0.7)
-    clear()  # PyCharm doesn't clear console
+    clear()  # PyCharm doesn't clear console. Look at next line.
+    print('\n' * 80)  # faking clear screen for pycharm
     int_list_from_user = get_list_from_user(difficulty)
     result = is_list_equal(rand_list, int_list_from_user)
     print(f"The comparison is: {result}")
@@ -61,5 +62,6 @@ def play(difficulty):
 # Clear screen using click.clear() function
 def clear():
     click.clear()
+
 
 
