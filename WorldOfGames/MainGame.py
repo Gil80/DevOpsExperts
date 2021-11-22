@@ -3,8 +3,30 @@ from GuessGame import play as gg
 from MemoryGame import play as mg
 game_num, difficulty = load_game()
 
-if game_num == 1:
-    mg(difficulty)
-elif game_num == 2:
-    gg(difficulty)
 
+def start_game(game_num_in, difficulty_in):
+    if game_num_in == 1:
+        mg(difficulty_in)
+
+    elif game_num_in == 2:
+        gg(difficulty_in)
+
+    ask_if_replay(game_num_in, difficulty_in)
+
+
+# ask if want to replay the game or go back.
+def ask_if_replay(game_num_in, difficulty_in):
+    retry_selection = input("Would you like to retry?\nPress 'Y' to retry or 'N' to go back or 'E' to exit: ").lower()
+
+    if retry_selection == 'y':
+        start_game(game_num_in, difficulty_in)
+    elif retry_selection == 'n':
+        local_game_num, local_difficulty = load_game()
+        start_game(local_game_num, local_difficulty)
+    elif retry_selection == 'e':
+        exit()
+    else:
+        print("Invalid selection.", ask_if_replay(difficulty))
+
+
+start_game(game_num, difficulty)

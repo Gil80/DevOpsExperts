@@ -1,9 +1,11 @@
 from random import randint
+from Live import load_game
 
 import click
 import time
 
 
+# generating random numbers in range and stores them in a list.
 def generate_sequence(difficulty):
     rand_list = []
     for number in range(1, difficulty + 1):
@@ -11,6 +13,7 @@ def generate_sequence(difficulty):
     return rand_list
 
 
+# asks user to input numbers and validates the input.
 def get_list_from_user(difficulty):
     list_from_user = []
     int_list_from_user = []
@@ -23,7 +26,7 @@ def get_list_from_user(difficulty):
             num = "nd"
         elif i == 3:
             num = "rd"
-        list_from_user.append(input(f"type the {i}{num} number:\n"))
+        list_from_user.append(input(f"type the {i}{num} number and press ENTER:\n"))
 
         #  trying to catch if user doesn't enter numbers
         try:
@@ -41,21 +44,27 @@ def get_list_from_user(difficulty):
     return int_list_from_user
 
 
+# compares program random selections to user input selection.
 def is_list_equal(rand_list, int_list_from_user):
     return rand_list == int_list_from_user  # will return True or False
 
 
+# passes the difficulty level. calls other game functions. print results.
 def play(difficulty):
     rand_list = generate_sequence(difficulty)
     input("Press Enter to start")
     print(rand_list)
     time.sleep(0.7)
     clear()  # PyCharm doesn't clear console. Look at next line.
-    print('\n' * 80)  # faking clear screen for pycharm
+    print('\n' * 100)  # faking clear screen for pycharm
     int_list_from_user = get_list_from_user(difficulty)
     result = is_list_equal(rand_list, int_list_from_user)
     print(f"The comparison is: {result}")
     print(f"The computer generated these numbers: {rand_list}")
+    if result:
+        print("You remembered all the numbers. You Win!")
+    else:
+        print("You didn't remember all the numbers. You lose.")
     return result
 
 
