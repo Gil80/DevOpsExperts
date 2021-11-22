@@ -4,4 +4,9 @@
 .idea/modules.xml
 .idea/vcs.xml
 .idea/inspectionProfiles/profiles_settings.xml
-/_pycache_
+/WorldOfGames/.idea/
+/WorldOfGames/__pycache__/GuessGame.cpython-310.pyc
+/WorldOfGames/__pycache__/Live.cpython-310.pyc
+/WorldOfGames/__pycache__/MainGame.cpython-310.pyc
+/WorldOfGames/__pycache__/MemoryGame.cpython-310.pyc
+/WorldOfGames/__pycache__/MemoryGame.cpython-38.pyc
