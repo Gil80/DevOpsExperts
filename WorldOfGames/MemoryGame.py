@@ -1,5 +1,4 @@
 from random import randint
-from Live import load_game
 
 import click
 import time

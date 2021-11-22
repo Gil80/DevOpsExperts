@@ -1,4 +1,6 @@
 # World Of Games #
+from wog_art import logo
+
 
 def welcome(name):
     if len(name) < 30:
@@ -11,6 +13,8 @@ def welcome(name):
         return welcome(input_name_try)
 
 
+print(logo)
+print('\n' * 2)
 input_name = input("Please type in your name: \n")
 welcome(input_name)
 

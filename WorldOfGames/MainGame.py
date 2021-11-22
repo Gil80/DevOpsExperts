@@ -1,15 +1,17 @@
 from Live import load_game
 from GuessGame import play as gg
 from MemoryGame import play as mg
+from CurrencyRouletteGame import play as cr
 game_num, difficulty = load_game()
 
 
 def start_game(game_num_in, difficulty_in):
     if game_num_in == 1:
         mg(difficulty_in)
-
     elif game_num_in == 2:
         gg(difficulty_in)
+    elif game_num_in == 3:
+        cr(difficulty_in)
 
     ask_if_replay(game_num_in, difficulty_in)
 

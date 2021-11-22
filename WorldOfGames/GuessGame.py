@@ -2,7 +2,7 @@ from random import randint
 
 
 # generates random secret number
-def generate_number(difficulty_input):  # needs to input difficulty
+def generate_number(difficulty_input):
     secret_number = randint(1, difficulty_input)
     return secret_number
 
