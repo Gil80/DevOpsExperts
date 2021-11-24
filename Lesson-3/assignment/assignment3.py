@@ -15,7 +15,7 @@ finally:
     print("finally")
     
 # 4 - What exception types can be caught by the following handler: exception:
-# it will catch standard exceptions:	
+# it will catch standard exceptions:
 Exception
 StopIteration
 SystemExit
