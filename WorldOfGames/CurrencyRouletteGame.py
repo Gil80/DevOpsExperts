@@ -1,14 +1,23 @@
-from forex_python.converter import CurrencyRates
 from random import randint
+import requests
 
 
-# online currency conversion and interval calculation
+# get request  currency conversion and interval calculation
 def get_money_interval(random_number, difficulty):
-    c = CurrencyRates()
-    currency = c.get_rate('ILS', 'USD')  # convert USD to ILS is not working. I'm forced to convert ILS to USD.
-    currency = round(1 / currency, 2)  # reversing the conversion to show from USD to ILS.
-    print(f"Currency = {currency}")
-    total = int(random_number * currency)  # casting to integer for simplicity
+    from_currency = 'USD'
+    to_currency = 'ILS'
+
+    # Where USD is the base currency you want to use
+    url = f'https://v6.exchangerate-api.com/v6/e01de27e3fb2e4ac40d77e31/pair/{from_currency}/{to_currency}'
+
+    # Making our request
+    response = requests.get(url)  # entire payload
+    data = response.json()  # parsing the json data
+
+    # Your JSON object
+    conversion_rate_var = data['conversion_rate']
+    print(f"Conversion Rate: {conversion_rate_var}")
+    total = int(random_number * conversion_rate_var)  # casting to integer for simplicity
     interval = total - (5 - difficulty), total + (5 - difficulty)
     return interval
 
