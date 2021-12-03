@@ -1,0 +1,9 @@
+docker network create my-network
+
+# Run a container based on the image that was created on web-app/Dockerfile
+docker run --rm -d --name my-flask --network my-network my-first-flask
+
+# Run a container based on the image that was created on py-image/Dockerfile
+docker run -i -t --rm --network my-network my-first-py-container:latest -> import requests;r = requests.get("http://my-flask:80");print(r.text)
+OR
+docker run -i -t --rm --network my-network my-first-py-container:latest python -c 'import requests;r = requests.get("http://my-flask:80");print(r.text)'
