@@ -1,0 +1,10 @@
+# Start the master:
+docker-compose up -d master
+# Initial setup:
+docker exec -it jenkins_master_1 bash -c "cat /var/jenkins_home/secrets/initialAdminPassword"
+
+# Start the worker:
+docker-compose up -d
+
+# Scale out the worker:
+docker-compose scale worker=3

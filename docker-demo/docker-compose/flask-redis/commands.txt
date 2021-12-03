@@ -1,0 +1,26 @@
+# Redis is an open-source, networked, in-memory, key-value data store with optional durability.
+
+docker-compose build
+docker-compose up -d
+
+docker-compose run flask env
+ docker-compose ps
+        Name                     Command               State                    Ports
+------------------------------------------------------------------------------------------------------
+flaskredis_redis_1   docker-entrypoint.sh redis ...   Up      6379/tcp
+flaskredis_web_1     flask run                        Up      0.0.0.0:5000->5000/tcp,:::5000->5000/tcp
+
+
+# Phase two - Under the flask service:
+volumes:
+      - .:/code
+
+# Phase three - Add persistent volume to Redis:
+# Under root:
+volumes:
+    redis_data:
+
+#Under redis service:
+    volumes:
+      - redis_data:/data
+
