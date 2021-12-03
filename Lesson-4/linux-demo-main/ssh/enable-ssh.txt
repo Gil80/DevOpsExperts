@@ -1,0 +1,11 @@
+On the guest machine:
+  sudo apt-get install openssh-server -y
+
+On the VBox manager -> machine settings -> network -> advanced -> port forwarding
+
+from the host machine (through a terminal client such as Mobaextrem):
+  Generate SSH keys:
+    Launch ssh-keygen (for the actual keys generation purpose)
+    open /home/mobaxterm (Here you can find the keys that you just generated)
+  ssh-copy-id -p 2245 ubuntu@localhost
+  ssh ubuntu@127.0.0.1 -p 2245

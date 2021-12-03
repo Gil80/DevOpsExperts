@@ -1,0 +1,2 @@
+docker build -t my-first-image .
+docker run --rm -it --name my-image my-first-image

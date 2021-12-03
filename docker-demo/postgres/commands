@@ -1,0 +1,27 @@
+docker pull postgres
+mkdir ${HOME}/postgres-data/
+docker run -d --name dev-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=Pass2020! -v /tmp/postgres-data/:/var/lib/postgresql/data -p 5433:5432 postgres
+
+docker exec -it dev-postgres bash
+psql -h localhost -U postgres
+
+Connecting from host:
+psql -h localhost -p 5434 -U postgres
+
+SQL:
+CREATE DATABASE mytest;
+
+============ PgAdmin ==============
+docker pull dpage/pgadmin4
+docker run -p 8085:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.local' -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' --name dev-pgadmin -d dpage/pgadmin4
+
+docker top <container id>
+
+# Adding a server:
+    *) Get the IP of the postgres server: docker inspect dev-postgres -> Look for "Gateway"
+    *) In pgAdmin -> Add server -> user: postgres, password: Pass2020!, host from previous section
+
+=====Create network=============
+docker network create -d bridge postgres-my-bridge-network
+docker run -d --name dev-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=Pass2020! -v /tmp/postgres-data/:/var/lib/postgresql/data --hostname dev-postgres --network postgres-my-bridge-network -p 5433:5432 postgres
+docker run -p 8085:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.local' -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' --network postgres-my-bridge-network --name dev-pgadmin -d dpage/pgadmin4
