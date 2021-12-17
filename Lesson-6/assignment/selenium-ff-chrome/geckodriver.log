@@ -1,0 +1,90 @@
+1639564711158	geckodriver	INFO	Listening on 127.0.0.1:41429
+1639564711665	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "51279" "-no-remote" "-profile" "/tmp/rust_mozprofilegDiewa"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: No GPUs detected via PCI
+1639564711930	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegDiewa/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51279/devtools/browser/840ee871-1f88-46bb-90f4-30cc516dda0c
+1639564713046	Marionette	INFO	Listening on port 42763
+1639564713095	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639564715748	Marionette	INFO	Stopped listening on port 42763
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639564805928	geckodriver	INFO	Listening on 127.0.0.1:52299
+1639564806434	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "54643" "-no-remote" "-profile" "/tmp/rust_mozprofileosAoip"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: No GPUs detected via PCI
+1639564806685	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileosAoip/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54643/devtools/browser/afb715b4-39a3-48a4-836a-cc190008dbbc
+1639564807652	Marionette	INFO	Listening on port 45725
+1639564807764	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+1639564811023	Marionette	INFO	Stopped listening on port 45725
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+[Parent 398, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1639670730500	geckodriver	INFO	Listening on 127.0.0.1:46813
+1639670730999	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "48157" "-no-remote" "-profile" "/tmp/rust_mozprofileXg8eZF"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: No GPUs detected via PCI
+1639670731651	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXg8eZF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48157/devtools/browser/c85a8591-e65e-4db1-9031-be979f24be33
+1639670732989	Marionette	INFO	Listening on port 36265
+1639670733022	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+1639670736305	Marionette	INFO	Stopped listening on port 36265
+1639670763291	geckodriver	INFO	Listening on 127.0.0.1:35561
+1639670763796	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35307" "-no-remote" "-profile" "/tmp/rust_mozprofilewGTSrY"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: No GPUs detected via PCI
+1639670764094	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewGTSrY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35307/devtools/browser/93ee08ca-46ab-4197-a3c1-db8fa7ccd07f
+1639670765246	Marionette	INFO	Listening on port 36589
+1639670765325	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+1639670768191	Marionette	INFO	Stopped listening on port 36589
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639678309369	geckodriver	INFO	Listening on 127.0.0.1:34811
+1639678309874	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "36703" "-no-remote" "-profile" "/tmp/rust_mozprofilenHo1tr"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: No GPUs detected via PCI
+1639678310135	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenHo1tr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36703/devtools/browser/75838fcc-556b-491a-ba0b-39913b97bc7f
+1639678311144	Marionette	INFO	Listening on port 43025
+1639678311196	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+1639678312005	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1639678314044	Marionette	INFO	Stopped listening on port 43025
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

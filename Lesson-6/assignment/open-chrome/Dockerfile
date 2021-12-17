@@ -14,5 +14,5 @@ RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 WORKDIR /app
 
-ADD . selenium-1.py /app/
+COPY selenium-1.py /app/
 CMD [ "python3", "selenium-1.py"]
