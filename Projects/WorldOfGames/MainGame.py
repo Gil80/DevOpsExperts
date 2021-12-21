@@ -26,6 +26,7 @@ def ask_if_replay(game_num_in, difficulty_in):
         local_game_num, local_difficulty = load_game()
         start_game(local_game_num, local_difficulty)
     elif retry_selection == 'e':
+        print("Goodbye.")
         exit()
     else:
         print("Invalid selection.", ask_if_replay(difficulty))
