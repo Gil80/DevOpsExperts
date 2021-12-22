@@ -61,8 +61,8 @@ def play(difficulty):
     print(f"The comparison is: {result}")
     print(f"The computer generated these numbers: {rand_list}")
     if result:
-        print("You remembered all the numbers. You Win!")
         add_score(difficulty)
+        print("You remembered all the numbers. You Win!")
     else:
         print("You didn't remember all the numbers. You lose.")
     return result
