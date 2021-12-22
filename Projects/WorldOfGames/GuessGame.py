@@ -1,4 +1,5 @@
 from random import randint
+from Scores import add_score
 
 
 # generates random secret number
@@ -27,11 +28,16 @@ def compare_results(secret_number, user_guess):
 
 
 # runs the game and returns result
-def play(difficulty_input):
-    secret_number = generate_number(difficulty_input)
-    user_guess = get_guess_from_user(difficulty_input)
+def play(difficulty):
+    secret_number = generate_number(difficulty)
+    user_guess = get_guess_from_user(difficulty)
     print(f"secret number = {secret_number}")  # comment in to test the code
     print(f"Your guess = {user_guess}")
     result = compare_results(secret_number, user_guess)
     print(f"The comparison is: {result}")
+    if result:
+        print("You guessed correctly!")
+        add_score(difficulty)
+    else:
+        print("You didn't guess the correct number")
     return result

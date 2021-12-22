@@ -1,7 +1,20 @@
+import Utils
 from Live import load_game
 from GuessGame import play as gg
 from MemoryGame import play as mg
 from CurrencyRouletteGame import play as cr
+
+scores_file = Utils.scores_file_name #  path to scores.txt
+
+# reset the scores.txt file
+def rest_scores():
+    with open(scores_file,'w', encoding='utf-8') as writer:
+        writer.write("0")
+
+
+rest_scores()
+
+
 game_num, difficulty = load_game()
 
 
@@ -30,6 +43,7 @@ def ask_if_replay(game_num_in, difficulty_in):
         exit()
     else:
         print("Invalid selection.", ask_if_replay(difficulty))
+
 
 
 start_game(game_num, difficulty)

@@ -1,6 +1,7 @@
 from random import randint
 from Utils import screen_cleaner
 import time
+from Scores import add_score
 
 
 # generating random numbers in range and stores them in a list.
@@ -61,6 +62,7 @@ def play(difficulty):
     print(f"The computer generated these numbers: {rand_list}")
     if result:
         print("You remembered all the numbers. You Win!")
+        add_score(difficulty)
     else:
         print("You didn't remember all the numbers. You lose.")
     return result

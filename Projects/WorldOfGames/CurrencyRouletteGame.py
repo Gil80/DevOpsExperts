@@ -1,5 +1,6 @@
 from random import randint
 import requests
+from Scores import add_score
 
 
 # get request  currency conversion and interval calculation
@@ -50,6 +51,7 @@ def play(difficulty):
     max_range = interval[1]
     if min_range <= user_guess <= max_range:
         print("You WIN!")
+        add_score(difficulty)
     else:
         print("You LOOSE!")
     print(f"The computer generated interval = {interval}")
