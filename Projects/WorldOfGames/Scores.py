@@ -16,6 +16,7 @@ def add_score(difficulty):
             current_score=0
         else:
             current_score = int(current_score_string)
+    
     with open(scores_file,'w', encoding='utf-8') as writer:
         new_score = current_score + points_of_winning
         new_score = str(new_score)
