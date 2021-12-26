@@ -9,7 +9,6 @@ chromeOptions = webdriver.ChromeOptions()
 chromeOptions.add_argument("--no-sandbox")
 chromeOptions.add_argument("--disable-dev-shm-using")
 chromeOptions.add_argument("--disable-extensions")
-chromeOptions.add_argument(r"user-data-dir=.\cookies\\test")
 chromeOptions.headless = True
 chrome_driver = webdriver.Chrome(chrome_options=chromeOptions)
 
