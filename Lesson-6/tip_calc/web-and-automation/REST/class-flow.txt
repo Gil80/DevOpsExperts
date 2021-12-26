@@ -1,2 +1,0 @@
-A REST API example:
-https://api.github.com/users/MordechaiTamam/repos
