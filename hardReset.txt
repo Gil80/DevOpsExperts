@@ -1,2 +1,0 @@
-This file will be used for hard reset
-this is a new line which will be removed when we hard reset to previous commit
