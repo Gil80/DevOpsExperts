@@ -3,7 +3,7 @@ minikube dashboard
 docker login
 create deployment.yaml borrowing from flask
 kubectl -f apply deployment.yaml
-minikube get pods
+kubectl get pods
 kubectl expose deployment superset --type=NodePort
 kubectl get service superset -o yaml  # to print out the yaml
 minikube service superset --url  # to expose IP and port
