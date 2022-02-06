@@ -4,3 +4,7 @@
 4. created ansible.cfg file with overwrite defaults
 5. created inventory file
 6. $ ansible-galaxy init common
+
+
+# how to filter facts
+ansible all -m setup -a "filter=ansible_hostname" | grep ansible_hostname

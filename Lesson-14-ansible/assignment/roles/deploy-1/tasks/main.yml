@@ -1,0 +1,7 @@
+---
+- name: create file on all servers
+  copy:
+    dest: "/tmp/test1.txt"
+    content:
+      Hello world!
+      
