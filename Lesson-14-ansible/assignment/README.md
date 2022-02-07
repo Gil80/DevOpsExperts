@@ -1,38 +1,25 @@
-Role Name
-=========
+What to run
+===========
 
-A brief description of the role goes here.
+1. Run `ansible-playbook install.yaml` to check assignment 1.
+2. Run `deploy-1.yaml` to check challenge 1.
+3. Run `deploy-2.yaml` to check challenge 2.
 
-Requirements
-------------
+Files created per requirements
+------------------------------
+- Inventory
+- ansible.cfg
+- Roles: common, deploy-1, deploy-2
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+Some commands
+-------------
+1. installed ansible $ `sudo sh install_ansible.sh`
+2. installed $ sudo sh setup-ubuntu.sh  # had to remove `set -e`
+3. $ ssh-copy-id -p <port>  root@localhost
+4. created ansible.cfg file with overwrite defaults
+5. created inventory file
+6. $ `ansible-galaxy init common`
 
-Role Variables
---------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+# how to filter facts
+`ansible all -m setup -a "filter=ansible_hostname" | grep ansible_hostname`
