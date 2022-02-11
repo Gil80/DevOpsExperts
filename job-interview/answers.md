@@ -5,7 +5,7 @@ master and 3 replicas using helm.
 A:
 1. create a values.yaml file that edits the default value of `replicaset`.
 Example:
-apiVersion: apps/v1
+```apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis-master
@@ -34,11 +34,13 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 6379
+```
 
 Then issue command: 
 $ `helm repo add bitnami https://charts.bitnami.com/bitnami`
 
 $ `helm install redis bitnami/redis -f redis-deployment-values.yaml`
+
 ----
 
 Q:
@@ -46,5 +48,5 @@ Q:
 what will be the commands to scale it from 1 to 3 pods
 
 A:
-`kubectl autoscale deployment nginx --min=2 --max=10`
+`kubectl autoscale deployment nginx --min=1 --max=3`
 
