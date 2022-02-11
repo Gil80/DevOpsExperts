@@ -1,3 +1,4 @@
+# Answer to question 1
 FROM python:latest
 
 WORKDIR /usr/app/src

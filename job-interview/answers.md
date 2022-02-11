@@ -1,5 +1,16 @@
 Q:
-10. What will be the commands to deploy out-of-the-box redis with
+1. Write a dockerfile that packages a python script and runs it as a 
+command
+
+A: See `Dockerfile`
+
+Q:
+2. Write a docker-compose.yml file that starts wordpress application.
+
+A: See `docker-compose.yaml` file
+
+Q:
+1.  What will be the commands to deploy out-of-the-box redis with
 master and 3 replicas using helm.
 
 A:
