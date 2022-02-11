@@ -48,4 +48,25 @@ password: taken from https://github.com/helm/charts/tree/master/stable/prometheu
     pwd: prom-operator (from values.yaml file set as default)
 
 ###### redis-exporter 
-    kubectl port-forward service/redis-exporter-prometheus-redis-exporter 9121
+`kubectl port-forward service/redis-exporter-prometheus-redis-exporter 9121`
+
+
+---
+### PROMETHEUS AND GRAFANA INSTALLATION USING SERVICE MONITORS
+https://kubernetes.github.io/ingress-nginx/user-guide/monitoring/
+### Install prometheus in prometheus namespace
+`helm install prometheus -n prometheus --create-namespace prometheus-community/kube-prometheus-stack`
+The `--create-namespace` is used if the namespace doesn't exist.
+
+#### port-forward prometheus
+`kubectl port-forward svc/prometheus-kube-prometheus-prometheus 9090 -n prometheus`
+
+#### port-forward grafana
+`kubectl port-forward svc/prometheus-grafana  3000:80 -n prometheus`
+
+#### port-forward nginx status or metrics
+`kubectl port-forward -n nginx deployment/nginx  8080`
+and
+`kubect port-forward -n nginx service/nginx 9113` for scraping
+
+`helm show values $(helm search repo kube-prometheus-stack | tail -n +2 | awk '{print $1}') > values.yaml`
