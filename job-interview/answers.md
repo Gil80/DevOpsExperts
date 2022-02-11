@@ -10,11 +10,11 @@ Q:
 A: See `docker-compose.yaml` file
 
 Q:
-1.  What will be the commands to deploy out-of-the-box redis with
+10.  What will be the commands to deploy out-of-the-box redis with
 master and 3 replicas using helm.
 
 A:
-1. create a values.yaml file that edits the default value of `replicaset`.
+10. create a values.yaml file that edits the default value of `replicaset`.
 Example:
 ```apiVersion: apps/v1
 kind: Deployment
