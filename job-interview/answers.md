@@ -5,7 +5,7 @@ master and 3 replicas using helm.
 A:
 1. create a values.yaml file that edits the default value of `replicaset`.
 Example:
-apiVersion: apps/v1
+```apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis-master
@@ -34,6 +34,7 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 6379
+```
 
 Then issue command: 
 $ `helm repo add bitnami https://charts.bitnami.com/bitnami`
