@@ -48,5 +48,5 @@ Q:
 what will be the commands to scale it from 1 to 3 pods
 
 A:
-`kubectl autoscale deployment nginx --min=2 --max=10`
+`kubectl autoscale deployment nginx --min=1 --max=3`
 
