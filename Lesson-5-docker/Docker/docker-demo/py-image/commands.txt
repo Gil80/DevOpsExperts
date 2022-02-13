@@ -1,5 +1,0 @@
-docker build -t my-py-image .
-
-docker run -i -t --rm my-py-image:latest
-import sys
-print(sys.version)

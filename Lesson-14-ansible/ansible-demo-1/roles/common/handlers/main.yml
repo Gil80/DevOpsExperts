@@ -1,6 +1,0 @@
----
-- name: Handler_No1
-  debug:
-    msg: "Message from Handler Number 1"
-
-

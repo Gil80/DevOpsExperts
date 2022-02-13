@@ -1,3 +1,0 @@
-# or with specific version number
-prometheus-flask-exporter==0.18.5
-flask

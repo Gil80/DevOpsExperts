@@ -1,1 +1,0 @@
-docker run --rm -v <YOUR LOCAL PATH>:/external --name selenium -it  moditamam/selenium:python3 bash

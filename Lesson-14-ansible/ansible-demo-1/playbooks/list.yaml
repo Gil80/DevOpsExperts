@@ -1,4 +1,0 @@
-- hosts: localhost
-  tasks:
-  - name: list files in folder
-    command: ls

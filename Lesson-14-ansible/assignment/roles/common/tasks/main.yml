@@ -1,7 +1,0 @@
----
-- name: install packages
-  apt:
-    name:
-      - vim
-      - zip
-    state: present

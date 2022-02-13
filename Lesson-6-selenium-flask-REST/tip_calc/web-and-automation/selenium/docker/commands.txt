@@ -1,1 +1,0 @@
-docker run --rm -v /home/gil/projects/DevOpsExperts/Lesson-6/tip_calc/web-and-automation-20211210T084745Z-001/web-and-automation:/external --name selenium -it  moditamam/selenium:python3 bash
