@@ -1,0 +1,8 @@
+---
+- name: install packages
+  apt:
+    name:
+      - vim
+      - zip
+      - common-utils
+    state: present
