@@ -1,0 +1,131 @@
+1639426204777	geckodriver	INFO	Listening on 127.0.0.1:39639
+1639426204783	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "59711" "-no-remote" "-profile" "/tmp/rust_mozprofilepmnnyk"
+1639426254767	geckodriver	INFO	Listening on 127.0.0.1:34265
+1639426254772	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "48737" "-no-remote" "-profile" "/tmp/rust_mozprofileFyXOqn"
+1639426369655	geckodriver	INFO	Listening on 127.0.0.1:49971
+1639426369660	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "35819" "-no-remote" "-profile" "/tmp/rust_mozprofileERDZVg"
+1639426416290	geckodriver	INFO	Listening on 127.0.0.1:60353
+1639426416295	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "43663" "-no-remote" "-profile" "/tmp/rust_mozprofilecXolSo"
+1639426451465	geckodriver	INFO	Listening on 127.0.0.1:48531
+1639426451470	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "55439" "-no-remote" "-profile" "/tmp/rust_mozprofileXCBL8r"
+1639426463060	geckodriver	INFO	Listening on 127.0.0.1:60381
+1639426463065	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "37951" "-no-remote" "-profile" "/tmp/rust_mozprofile8c0Flk"
+1639426717872	geckodriver	INFO	Listening on 127.0.0.1:52339
+1639426717878	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "45499" "-no-remote" "-profile" "/tmp/rust_mozprofilegtRPyx"
+1639426732619	geckodriver	INFO	Listening on 127.0.0.1:44893
+1639426732629	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "50541" "-no-remote" "-profile" "/tmp/rust_mozprofileNGHyaJ"
+1639426783607	geckodriver	INFO	Listening on 127.0.0.1:49649
+1639426783661	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "49617" "-no-remote" "-profile" "/tmp/rust_mozprofileTj2G1T"
+1639426848819	geckodriver	INFO	Listening on 127.0.0.1:41035
+1639426848833	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "50511" "-no-remote" "-profile" "/tmp/rust_mozprofileReEYEO"
+1639426910313	geckodriver	INFO	Listening on 127.0.0.1:52821
+1639426910320	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "34949" "-no-remote" "-profile" "/tmp/rust_mozprofiletf7lv2"
+1639427004812	geckodriver	INFO	Listening on 127.0.0.1:54431
+1639427004818	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "60987" "-no-remote" "-profile" "/tmp/rust_mozprofileha4dOm"
+1639427140786	geckodriver	INFO	Listening on 127.0.0.1:60839
+1639427140792	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "45781" "-no-remote" "-profile" "/tmp/rust_mozprofilezJzOlz"
+1639427247950	geckodriver	INFO	Listening on 127.0.0.1:44797
+1639427248127	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "34611" "-no-remote" "-profile" "/tmp/rust_mozprofilekFNEWo"
+1639427352020	geckodriver	INFO	Listening on 127.0.0.1:35649
+1639427352211	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "45477" "-no-remote" "-profile" "/tmp/rust_mozprofile1rR7cM"
+1639427378486	geckodriver	INFO	Listening on 127.0.0.1:34461
+1639427378492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58491" "-no-remote" "-profile" "/tmp/rust_mozprofilevcn0pF"
+1639427379174	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevcn0pF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58491/devtools/browser/c88b7f1c-8afa-4128-a771-2bba74d074a4
+1639427380699	Marionette	INFO	Listening on port 39145
+1639427380818	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+1639427382273	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1639427384659	Marionette	INFO	Stopped listening on port 39145
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639427407756	geckodriver	INFO	Listening on 127.0.0.1:53255
+1639427407761	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47001" "-no-remote" "-profile" "/tmp/rust_mozprofileFvGbg1"
+1639427408461	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFvGbg1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47001/devtools/browser/73726e7b-3f1e-46e9-bb3f-3f44c5dbab8d
+1639427409774	Marionette	INFO	Listening on port 34647
+1639427409915	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+1639427411112	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1639427413423	Marionette	INFO	Stopped listening on port 34647
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639430137075	geckodriver	INFO	Listening on 127.0.0.1:44777
+1639430137580	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46679" "-no-remote" "-profile" "/tmp/rust_mozprofileeRFTxI"
+1639430138278	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeRFTxI/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46679/devtools/browser/75daad49-46bb-4a53-835f-c1beb3176ca0
+1639430139656	Marionette	INFO	Listening on port 45143
+1639430139722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639430148129	Marionette	INFO	Stopped listening on port 45143
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1639430211168	geckodriver	INFO	Listening on 127.0.0.1:48463
+1639430211674	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55759" "-no-remote" "-profile" "/tmp/rust_mozprofilenpHczn"
+1639430212396	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenpHczn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55759/devtools/browser/f990a174-f31c-46bb-9df8-073569b333b6
+1639430213715	Marionette	INFO	Listening on port 44885
+1639430213802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+1639430215030	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1639430217153	Marionette	INFO	Stopped listening on port 44885
+1639430242459	geckodriver	INFO	Listening on 127.0.0.1:42487
+1639430242463	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55053" "-no-remote" "-profile" "/tmp/rust_mozprofiletCPeI2"
+1639430243159	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletCPeI2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55053/devtools/browser/eb309bb8-409d-41e6-b6c3-99080aadaece
+1639430244482	Marionette	INFO	Listening on port 34415
+1639430244613	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+1639430246507	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1639430248676	Marionette	INFO	Stopped listening on port 34415
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639430266964	geckodriver	INFO	Listening on 127.0.0.1:43611
+1639430267470	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58529" "-no-remote" "-profile" "/tmp/rust_mozprofileqAPSzj"
+1639430268154	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqAPSzj/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58529/devtools/browser/f5132bbc-5f0e-4925-81fb-b87763637549
+1639430269470	Marionette	INFO	Listening on port 36915
+1639430269502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+1639430270829	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1639430273264	Marionette	INFO	Stopped listening on port 36915
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639430296504	geckodriver	INFO	Listening on 127.0.0.1:33341
+1639430297009	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33711" "-no-remote" "-profile" "/tmp/rust_mozprofile1VvqHt"
+1639430297679	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1VvqHt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33711/devtools/browser/87527bb4-ac77-469f-a2cb-f0b46cd621ff
+1639430298989	Marionette	INFO	Listening on port 37795
+1639430299067	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+1639430300296	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1639430302618	Marionette	INFO	Stopped listening on port 37795
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639433646536	geckodriver	INFO	Listening on 127.0.0.1:56363
+1639433647041	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45221" "-no-remote" "-profile" "/tmp/rust_mozprofilenTmQvZ"
+1639433647739	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenTmQvZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45221/devtools/browser/7dc659aa-3d3d-46d1-9737-f1062eea0117
+1639433649210	Marionette	INFO	Listening on port 36151
+1639433649273	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ynet.co.il/home/0,7340,L-8,00.html, line 1: ReferenceError: setNptTechAdblockerCookie is not defined
+JavaScript error: https://player.ynet.co.il/fp727/flowplayer.ads.114.ynet.js, line 2: ReferenceError: flowplayer is not defined
+1639433652678	Marionette	INFO	Stopped listening on port 36151
+[Parent 52625, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-PkqERJ/firefox-95.0+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19

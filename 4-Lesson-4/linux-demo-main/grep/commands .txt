@@ -1,0 +1,23 @@
+searching a string 'nix' recursively:
+    grep -n nix grep/ -r
+
+searching for a term with spaces:
+    grep 'hello world' grep/ -r
+
+searching for a term ignoring case sensitivity:
+    grep -i 'hello world' -r .
+
+To search for the words that matches the pattern "tech" at the beginning of the line in a file, run:
+    grep ^tech file.txt
+
+search for the words that ends with a particular letter(s), for example "x":
+    grep x$ file.txt
+
+search for any word that has "n" in the file:
+    grep .n file.txt
+
+search for any words that start with either "l" or "o":
+    egrep '^(l|o)' file.txt
+
+search for the lines that start with any character range between "l" to "u":
+    egrep '^[l-u]' file.txt

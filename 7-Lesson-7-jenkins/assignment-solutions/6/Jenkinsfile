@@ -1,0 +1,42 @@
+pipeline {
+     agent any
+     stages {
+         stage('create file') {
+              steps {
+                 sh '''#!/bin/bash
+                 cd /tmp
+                 rm myFirstJob.txt
+                 touch myFirstJob.txt
+                 echo "Gil Levy\n This line was executed by Jenkins job\n using declerative script.\n" >> myFirstJob.txt
+                 echo "creating myFirstJob.txt"
+                 echo "writing to file"
+                 '''
+              }
+         }
+         stage('print file') {
+              steps {
+                 sh '''#!/bin/bash
+                 cd /tmp
+                 cat myFirstJob.txt
+                 '''
+              }
+         }
+         stage('show disk size') {
+              steps {
+                 sh '''#!/bin/bash
+                 df -h
+                 '''
+              }
+         }
+         stage('move file') {
+              steps {
+                 sh '''#!/bin/bash
+                 cd /tmp
+                 mv myFirstJob.txt $HOME
+                 cd $HOME
+                 ls -ltr *.txt
+                 '''
+              }
+         }
+     }
+}

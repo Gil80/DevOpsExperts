@@ -1,0 +1,28 @@
+A.
+
+first = 7
+second = 44.3
+
+print(first+second)
+print(first*second)
+print(second/first)
+
+**********************
+B. 
+
+a = 9
+b = 8
+c = 15
+
+**********************
+C.
+
+No, in python a word can be marked with both one/double quote
+
+**********************
+
+D.
+
+7
+
+**********************
