@@ -1,0 +1,17 @@
+---
+- hosts: [node1,]
+  serial: 1
+  vars:
+    my_name: devops-expert
+  tasks:
+  - name: Template a file to another place
+    template:
+        src: hostname.j2
+        dest: /root/hostname.conf
+  - name: Display resolv.conf contents
+    command: cat /root/hostname.conf
+    register: command_output
+
+  - name: Print to console
+    debug:
+      msg: "{{command_output.stdout}}"
