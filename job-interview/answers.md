@@ -2,12 +2,22 @@ Q:
 1. Write a dockerfile that packages a python script and runs it as a 
 command
 
-A: See `Dockerfile`
+A:
+1. See `Dockerfile`
 
 Q:
 2. Write a docker-compose.yml file that starts wordpress application.
 
-A: See `docker-compose.yaml` file
+A:
+2. See `docker-compose.yaml` file
+
+Q:
+3. Write an ansible role that installs 3 packages on the servers, checks if 
+the servers are CentOS and if they do it will create an empty file 
+under /tmp/this_is_centos
+
+A:
+3. 
 
 Q:
 10.  What will be the commands to deploy out-of-the-box redis with
