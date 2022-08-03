@@ -1,0 +1,28 @@
+PostgreSQL - Free tier db.t3.micro
+posrgres port 5432
+password: Gl5236204
+instance name: postgres-1
+master username: postgres
+
+ec2-44-203-22-109.compute-1.amazonaws.com
+postgres-1.crsz9zfkqldy.us-east-1.rds.amazonaws.com
+
+> psql -h database-1.crsz9zfkqldy.us-east-1.rds.amazonaws.com -p 5432 postgre
+s postgres
+
+> psql -h database-1.crsz9zfkqldy.us-east-1.rds.amazonaws.com -p 5432 --usern
+ame=gis_admin --password --dbname=lab_gis
+
+password = change_me
+
+awsuser
+access-key: AKIAROCMV4OCBONOFP5I
+secret key: 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
+
+SELECT aws_s3.table_import_from_s3(
+'lab_gis', 'event_id,event_name,event_value', '(format csv, header true)',
+'postgres-gis',
+'/FILE_NAME',
+'us-east-1',
+'AKIAROCMV4OCBONOFP5I', 'IwhcwGo9bdllSKoPZtEU6aHljuOKztACUILvHaSc'
+)
